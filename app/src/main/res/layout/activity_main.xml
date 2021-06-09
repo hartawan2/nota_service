@@ -1,75 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     tools:context=".MainActivity"
     tools:ignore="ExtraText">
 
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="center"
-    android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="vertical"
-        tools:ignore="UselessParent">
+        android:orientation="horizontal">
+
         <LinearLayout
-            android:id="@+id/SERVICE"
-            android:layout_width="match_parent"
+            android:id="@+id/linearlayout1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:gravity="center"
+            android:layout_margin="16dp"
             android:orientation="vertical">
 
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/category" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="service"
+                android:text="SERVICE"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                tools:ignore="OnClick" />
         </LinearLayout>
-     <ImageView
-         android:layout_width="100dp"
-         android:layout_height="100dp"
-         android:layout_margin="10dp"
-         android:src="@drawable/category"/>
-     <Button
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:gravity="center"
-         android:text="SERVICE"
-         android:textColor="@color/white"
-         android:textSize="16dp"
-         android:onClick="service"
-         tools:ignore="OnClick" />
 
+        <LinearLayout
+            android:id="@+id/linearlayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
 
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/category2" />
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="teknisi"
+                android:text="TEKNISI"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </LinearLayout>
     </LinearLayout>
-    <LinearLayout
-        android:id="@+id/Teknisi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:gravity="center"
-        android:orientation="vertical" />
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_margin="10dp"
-        android:src="@drawable/category2"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="TEKNISI"
-        android:textColor="@color/white"
-        android:textSize="16dp"
-        android:onClick="teknisi"/>
-
-</LinearLayout>
-
-
-
-</LinearLayout>
+</RelativeLayout>
